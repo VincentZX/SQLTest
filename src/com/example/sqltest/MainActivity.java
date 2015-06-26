@@ -24,6 +24,7 @@ public class MainActivity extends Activity {
         SQLiteDatabase.loadLibs(this);
         mDBHelper = OpenHelperManager.getHelper(this, DBHelper.class);
         mTemp = mDBHelper.getRuntimeExceptionDao(Temp.class);
+
         //添加数据库数据库源
         findViewById(R.id.add_data).setOnClickListener(new OnClickListener() {
             
