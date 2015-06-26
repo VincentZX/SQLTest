@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
         SQLiteDatabase.loadLibs(this);
         mDBHelper = OpenHelperManager.getHelper(this, DBHelper.class);
         mTemp = mDBHelper.getRuntimeExceptionDao(Temp.class);
-        
+        //添加数据库数据库源
         findViewById(R.id.add_data).setOnClickListener(new OnClickListener() {
             
             @Override
@@ -45,8 +45,7 @@ public class MainActivity extends Activity {
                     for (int i = 0; i < list.size(); i++) {
                         System.out.println("temp->" + list.get(i));
                     }
-                }
-                catch (Exception e) {
+                } catch (Exception e) {
                 }
                 
             }
