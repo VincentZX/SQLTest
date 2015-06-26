@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
                 mTemp.create(mtep);
             }
         });
-        
+        //²éÑ¯Êý¾Ý
         findViewById(R.id.query_data).setOnClickListener(new OnClickListener() {
             
             @Override
